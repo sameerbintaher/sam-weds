@@ -20,6 +20,6 @@
 - **Express**
 - **MongoDB**
 
-**[Back-end Repository](https://github.com/programming-hero-web-course-4/niche-website-server-side-sameerbintaher)**
+**[Back-end Repository](https://github.com/sameerbintaher/sam-weds-server)**
 
 <hr/>
