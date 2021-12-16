@@ -14,7 +14,7 @@ const OrderList = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/orders?email=${email}`)
+      .get(`https://fathomless-mesa-11589.herokuapp.com/orders?email=${email}`)
       .then((res) => {
         setOrders(res.data);
         setLoading(false);
@@ -35,7 +35,10 @@ const OrderList = () => {
     const modifiedStatus = { id, status };
 
     axios
-      .patch("http://localhost:5000/updateOrderStatus", modifiedStatus)
+      .patch(
+        "https://fathomless-mesa-11589.herokuapp.com/updateOrderStatus",
+        modifiedStatus
+      )
       .then((res) => res.data && toast.success(`Set to ${status}`))
       .catch((error) => toast.error(error.message));
   };

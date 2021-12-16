@@ -21,7 +21,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/isAdmin?email=${loggedInUser?.email}`)
+      .get(
+        `https://fathomless-mesa-11589.herokuapp.com/isAdmin?email=${loggedInUser?.email}`
+      )
       .then((res) => {
         setIsAdmin(res.data);
         setAdminLoading(false);

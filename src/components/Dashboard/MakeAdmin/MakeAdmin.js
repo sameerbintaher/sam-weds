@@ -23,7 +23,7 @@ const MakeAdmin = () => {
     }
     const loading = toast.loading("Adding...Please wait!");
     axios
-      .post("http://localhost:5000/addAdmin", data)
+      .post("https://fathomless-mesa-11589.herokuapp.com/addAdmin", data)
       .then((res) => {
         toast.dismiss(loading);
         if (res.data) {

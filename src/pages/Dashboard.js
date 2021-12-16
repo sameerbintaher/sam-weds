@@ -51,7 +51,7 @@ const Dashboard = ({ adminLoading }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/reviews?email=${email}`)
+      .get(`https://fathomless-mesa-11589.herokuapp.com/reviews?email=${email}`)
       .then((res) => {
         setReview(res.data);
         setLoadingReview(false);

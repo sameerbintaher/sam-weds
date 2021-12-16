@@ -53,7 +53,10 @@ const AddService = ({ editService, setEditService }) => {
         return toast.error("You haven't changed anything!");
       }
       axios
-        .patch(`http://localhost:5000/update/${editService._id}`, serviceInfo)
+        .patch(
+          `https://fathomless-mesa-11589.herokuapp.com/update/${editService._id}`,
+          serviceInfo
+        )
         .then((res) => {
           toast.dismiss(loading);
           if (res.data) {
@@ -80,7 +83,10 @@ const AddService = ({ editService, setEditService }) => {
     }
 
     axios
-      .post("http://localhost:5000/addService", serviceInfo)
+      .post(
+        "https://fathomless-mesa-11589.herokuapp.com/addService",
+        serviceInfo
+      )
       .then((res) => {
         toast.dismiss(loading);
         if (res.data) {

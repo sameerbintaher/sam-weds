@@ -17,7 +17,7 @@ const Testimonials = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/reviews")
+      .get("https://fathomless-mesa-11589.herokuapp.com/reviews")
       .then((res) => {
         setReviews(res.data);
         setLoading(false);

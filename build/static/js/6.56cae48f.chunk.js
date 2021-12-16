@@ -120,7 +120,9 @@
                             return (
                               a.a
                                 .patch(
-                                  "http://localhost:5000/update/".concat(t._id),
+                                  "https://fathomless-mesa-11589.herokuapp.com/update/".concat(
+                                    t._id
+                                  ),
                                   o
                                 )
                                 .then(function (e) {
@@ -155,7 +157,10 @@
                             );
                           case 27:
                             a.a
-                              .post("http://localhost:5000/addService", o)
+                              .post(
+                                "https://fathomless-mesa-11589.herokuapp.com/addService",
+                                o
+                              )
                               .then(function (e) {
                                 if ((n.b.dismiss(s), e.data))
                                   return f()(
@@ -427,7 +432,10 @@
                               }
                             )),
                             a.a
-                              .post("http://localhost:5000/addOrder", h)
+                              .post(
+                                "https://fathomless-mesa-11589.herokuapp.com/addOrder",
+                                h
+                              )
                               .then(function (e) {
                                 if ((n.b.dismiss(r), e.data))
                                   return f()(
@@ -627,7 +635,7 @@
             });
           Object(i.useEffect)(function () {
             a.a
-              .get("http://localhost:5000/services")
+              .get("https://fathomless-mesa-11589.herokuapp.com/services")
               .then(function (e) {
                 return p(e.data);
               })
@@ -849,7 +857,11 @@
               Object(i.useEffect)(
                 function () {
                   a.a
-                    .get("http://localhost:5000/orders?email=".concat(e))
+                    .get(
+                      "https://fathomless-mesa-11589.herokuapp.com/orders?email=".concat(
+                        e
+                      )
+                    )
                     .then(function (e) {
                       d(e.data), h(!1);
                     })
@@ -1044,7 +1056,10 @@
                     );
                   var c = n.b.loading("Adding...Please wait!");
                   a.a
-                    .post("http://localhost:5000/addAdmin", t)
+                    .post(
+                      "https://fathomless-mesa-11589.herokuapp.com/addAdmin",
+                      t
+                    )
                     .then(function (e) {
                       if ((n.b.dismiss(c), e.data))
                         return f()(
@@ -1465,7 +1480,7 @@
           Object(i.useEffect)(
             function () {
               a.a
-                .get("http://localhost:5000/services")
+                .get("https://fathomless-mesa-11589.herokuapp.com/services")
                 .then(function (e) {
                   s(e.data), g(!1);
                 })
@@ -1557,7 +1572,7 @@
                                                   });
                                                 a.a
                                                   .delete(
-                                                    "http://localhost:5000/delete/".concat(
+                                                    "https://fathomless-mesa-11589.herokuapp.com/delete/".concat(
                                                       t
                                                     )
                                                   )
@@ -1627,7 +1642,11 @@
           Object(i.useEffect)(
             function () {
               a.a
-                .get("http://localhost:5000/orders?email=".concat(e))
+                .get(
+                  "https://fathomless-mesa-11589.herokuapp.com/orders?email=".concat(
+                    e
+                  )
+                )
                 .then(function (e) {
                   d(e.data), h(!1);
                 })
@@ -1690,7 +1709,7 @@
                                       var r = { id: e, status: t };
                                       a.a
                                         .patch(
-                                          "http://localhost:5000/updateOrderStatus",
+                                          "https://fathomless-mesa-11589.herokuapp.com/updateOrderStatus",
                                           r
                                         )
                                         .then(function (e) {
@@ -1802,7 +1821,9 @@
                   r
                     ? a.a
                         .patch(
-                          "http://localhost:5000/updateReview/".concat(t._id),
+                          "https://fathomless-mesa-11589.herokuapp.com/updateReview/".concat(
+                            t._id
+                          ),
                           e
                         )
                         .then(function (c) {
@@ -1838,7 +1859,10 @@
                             );
                         })
                     : a.a
-                        .post("http://localhost:5000/addReview", e)
+                        .post(
+                          "https://fathomless-mesa-11589.herokuapp.com/addReview",
+                          e
+                        )
                         .then(function (t) {
                           if ((n.b.dismiss(i), t.data))
                             return (
@@ -2050,7 +2074,7 @@
                                 var c = n.b.loading("Deleting...Please wait!");
                                 a.a
                                   .delete(
-                                    "http://localhost:5000/deleteReview/".concat(
+                                    "https://fathomless-mesa-11589.herokuapp.com/deleteReview/".concat(
                                       e
                                     )
                                   )
@@ -2414,7 +2438,11 @@
           Object(i.useEffect)(
             function () {
               a.a
-                .get("http://localhost:5000/reviews?email=".concat(s))
+                .get(
+                  "https://fathomless-mesa-11589.herokuapp.com/reviews?email=".concat(
+                    s
+                  )
+                )
                 .then(function (e) {
                   S(e.data), y(!1);
                 })

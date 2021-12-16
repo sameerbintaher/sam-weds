@@ -19,7 +19,7 @@ const ManageService = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/services")
+      .get("https://fathomless-mesa-11589.herokuapp.com/services")
       .then((res) => {
         setServices(res.data);
         setLoading(false);
@@ -39,7 +39,7 @@ const ManageService = () => {
         const loading = toast.loading("Deleting...Please wait!");
         const removedServices = services.filter((item) => item._id !== id);
         axios
-          .delete(`http://localhost:5000/delete/${id}`)
+          .delete(`https://fathomless-mesa-11589.herokuapp.com/delete/${id}`)
           .then((res) => {
             toast.dismiss(loading);
             if (res.data) {

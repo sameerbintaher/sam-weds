@@ -15,7 +15,7 @@ const BookingList = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/orders?email=${email}`)
+      .get(`https://fathomless-mesa-11589.herokuapp.com/orders?email=${email}`)
       .then((res) => {
         setOrders(res.data);
         setLoading(false);

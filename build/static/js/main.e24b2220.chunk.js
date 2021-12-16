@@ -37,7 +37,7 @@
           return (
             Object(r.useEffect)(function () {
               s.a
-                .get("http://localhost:5000/services")
+                .get("https://fathomless-mesa-11589.herokuapp.com/services")
                 .then(function (e) {
                   y(e.data), p(!1);
                 })
@@ -180,7 +180,7 @@
             function () {
               s.a
                 .get(
-                  "http://localhost:5000/isAdmin?email=".concat(
+                  "https://fathomless-mesa-11589.herokuapp.com/isAdmin?email=".concat(
                     null === n || void 0 === n ? void 0 : n.email
                   )
                 )

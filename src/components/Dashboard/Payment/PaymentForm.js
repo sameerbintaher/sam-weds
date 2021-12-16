@@ -74,7 +74,10 @@ const PaymentForm = ({ serviceInfo }) => {
     };
 
     axios
-      .post("http://localhost:5000/addOrder", orderDetails)
+      .post(
+        "https://fathomless-mesa-11589.herokuapp.com/addOrder",
+        orderDetails
+      )
       .then((res) => {
         toast.dismiss(loading);
         if (res.data) {

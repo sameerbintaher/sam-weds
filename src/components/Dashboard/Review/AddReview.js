@@ -19,7 +19,10 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
 
     if (edit) {
       axios
-        .patch(`http://localhost:5000/updateReview/${review._id}`, data)
+        .patch(
+          `https://fathomless-mesa-11589.herokuapp.com/updateReview/${review._id}`,
+          data
+        )
         .then((res) => {
           toast.dismiss(loading);
           if (
@@ -52,7 +55,7 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
     }
 
     axios
-      .post("http://localhost:5000/addReview", data)
+      .post("https://fathomless-mesa-11589.herokuapp.com/addReview", data)
       .then((res) => {
         toast.dismiss(loading);
         if (res.data) {

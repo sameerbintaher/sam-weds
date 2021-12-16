@@ -40,7 +40,7 @@ const Book = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/services")
+      .get("https://fathomless-mesa-11589.herokuapp.com/services")
       .then((res) => setServices(res.data))
       .catch((error) => toast.error(error.message));
   }, []);

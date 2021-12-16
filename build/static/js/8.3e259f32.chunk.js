@@ -331,7 +331,7 @@
             return (
               Object(c.useEffect)(function () {
                 k.a
-                  .get("http://localhost:5000/services")
+                  .get("https://fathomless-mesa-11589.herokuapp.com/services")
                   .then(function (e) {
                     l(e.data), a(!1);
                   })
@@ -417,7 +417,7 @@
             return (
               Object(c.useEffect)(function () {
                 k.a
-                  .get("http://localhost:5000/reviews")
+                  .get("https://fathomless-mesa-11589.herokuapp.com/reviews")
                   .then(function (e) {
                     j(e.data), a(!1);
                   })

@@ -23,7 +23,9 @@ const Review = ({
       if (wantDelete) {
         const loading = toast.loading("Deleting...Please wait!");
         axios
-          .delete(`http://localhost:5000/deleteReview/${id}`)
+          .delete(
+            `https://fathomless-mesa-11589.herokuapp.com/deleteReview/${id}`
+          )
           .then((res) => {
             toast.dismiss(loading);
             if (res.data) {
