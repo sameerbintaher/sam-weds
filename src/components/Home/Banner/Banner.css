@@ -1,0 +1,8 @@
+.banner {
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  display: block;
+}
